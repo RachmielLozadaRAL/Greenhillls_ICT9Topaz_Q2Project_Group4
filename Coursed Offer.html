@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <title>Courses Offer</title>
+    <style>
+        body {
+            background-image: url(https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/158c4532-1ab3-4ce5-8ed4-f59ce7e847d2/O.B.+Montessori+Center+Greenhills+Campus);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .navbar {
+            background-color: #0d6efd !important;
+        }
+
+        .page-header {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 40px 20px;
+            margin: 30px 0;
+            border-radius: 10px;
+        }
+
+        .page-header h1 {
+            color: white;
+            font-weight: bold;
+        }
+
+        .schedule-section {
+            padding: 40px 20px;
+        }
+
+        .schedule-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+
+        .schedule-card h2 {
+            background: linear-gradient(135deg, #0d6efd 0%, #0b5ed7 100%);
+            color: white;
+            padding: 20px;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .table {
+            margin-bottom: 0;
+        }
+
+        .table thead {
+            background-color: #f8f9fa;
+        }
+
+        .table thead th {
+            color: #0d6efd;
+            font-weight: bold;
+            border-bottom: 2px solid #0d6efd;
+            padding: 15px;
+        }
+
+        .table tbody td {
+            padding: 15px;
+            vertical-align: middle;
+        }
+
+        .table tbody tr {
+            border-bottom: 1px solid #ddd;
+            transition: background-color 0.3s ease;
+        }
+
+        .table tbody tr:hover {
+            background-color: #f0f7ff;
+        }
+
+        .table tbody tr:last-child {
+            border-bottom: none;
+        }
+
+        .day-badge {
+            background-color: #0d6efd;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .time-badge {
+            background-color: #e7f1ff;
+            color: #0d6efd;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+
+        .dept-badge {
+            background-color: #d4e4f7;
+            color: #0d6efd;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <div class="container-fluid">
+            <a href="Homepage.html" class="navbar-brand">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQchdgIeG7ozkE0TV__FakwgnYka2ouCJgzNg&s" alt="OBMC Logo" height="60" class="me-2">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" aria-controls="mynavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a href="Homepage.html" class="nav-link">Homepage</a></li>
+                    <li class="nav-item"><a href="Coursed Offer.html" class="nav-link">Courses Offer</a></li>
+                    <li class="nav-item"><a href="Enrollment_Contact_Us.html" class="nav-link">Enrollment and Contact Us</a></li>
+                    <li class="nav-item"><a href="About_Us.html" class="nav-link">About the Group Member</a></li>
+                    <li class="nav-item"><a href="School_Programs.html" class="nav-link">School Programs</a></li>
+                </ul>
+                <form class="d-flex" onsubmit="return false;">
+                    <input type="text" class="form-control me-2" placeholder="Search">
+                    <button type="button" class="btn btn-light">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="page-header">
+            <h1 class="text-center">School Work Hours</h1>
+            <p class="text-center text-white">Office Hours & Department Schedules</p>
+        </div>
+
+        <div class="schedule-section">
+            <div class="schedule-card">
+                <h2>Weekly Office Hours</h2>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Day</th>
+                                <th scope="col">Schedule</th>
+                                <th scope="col">Department</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="day-badge">Monday</span></td>
+                                <td><span class="time-badge">8:00 AM - 4:00 PM</span></td>
+                                <td><span class="dept-badge">Registrar's Office</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="day-badge">Tuesday</span></td>
+                                <td><span class="time-badge">8:00 AM - 4:00 PM</span></td>
+                                <td><span class="dept-badge">Clinic Department</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="day-badge">Wednesday</span></td>
+                                <td><span class="time-badge">8:00 AM - 4:00 PM</span></td>
+                                <td><span class="dept-badge">Guidance Office</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="day-badge">Thursday</span></td>
+                                <td><span class="time-badge">8:00 AM - 4:00 PM</span></td>
+                                <td><span class="dept-badge">Principal's Office</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="day-badge">Friday</span></td>
+                                <td><span class="time-badge">8:00 AM - 3:00 PM</span></td>
+                                <td><span class="dept-badge">Admin Office</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+</body>
+</html>
